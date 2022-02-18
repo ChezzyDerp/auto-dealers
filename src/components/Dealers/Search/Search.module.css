@@ -1,0 +1,12 @@
+.Search{
+    border: 2px solid #d5daf7;
+    color:#d5daf7 ;
+    padding: 5px 20px;
+    transition: 0.5s;
+}
+.Search:focus{
+    border-color: #d5daf7;
+    border-radius: 5px;
+    color: rgb(10, 10, 10);
+    outline: none;
+}

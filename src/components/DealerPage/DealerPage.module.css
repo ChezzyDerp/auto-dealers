@@ -1,0 +1,24 @@
+.DealerPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.name{
+    font-size: calc(15px + 1vw);
+    font-weight: 500;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 10px;
+
+}
+.wrap > img{
+    width: 50%;
+    border-radius: 15px;
+}
