@@ -26,7 +26,6 @@ export const getDealersById = (id) =>{
                     resolve(candidate);
                 } else {
                     reject(`Нет автосалона с id ${id}!`);
-
                 }
             }, DELAY);
         });
