@@ -16,7 +16,7 @@ const DealerPage = () =>{
             setDealer(data)
         })
 
-    }, [0])
+    }, [params.id])
 
     return(
         <div className={style.DealerPage}>

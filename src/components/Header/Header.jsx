@@ -20,7 +20,7 @@ const Header = () =>{
                 <span>largest list</span> Mega Dealers <span>of dealers</span>
             </div>
             
-            <a target="_blank" href="https://github.com/ChezzyDerp/auto-dealers">
+            <a target="_blank" rel="noreferrer"  href="https://github.com/ChezzyDerp/auto-dealers">
                 <FontAwesomeIcon className={style.questionIcon} icon={faQuestion} />
             </a>
           
