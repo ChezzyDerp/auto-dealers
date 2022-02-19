@@ -16,11 +16,14 @@ const Header = () =>{
                 navigate('/dealers')
             }} className={style.houseIcon} icon={faHouse} />
 
-           <div onClick={() => navigate('/')} className={style.logo}>
+            <div onClick={() => navigate('/')} className={style.logo}>
                 <span>largest list</span> Mega Dealers <span>of dealers</span>
-           </div>
-
-           <FontAwesomeIcon className={style.questionIcon} icon={faQuestion} />
+            </div>
+            
+            <a target="_blank" href="https://github.com/ChezzyDerp/auto-dealers">
+                <FontAwesomeIcon className={style.questionIcon} icon={faQuestion} />
+            </a>
+          
 
         </div>
     )

@@ -23,18 +23,15 @@ const DealerPage = () =>{
             {dealer ? 
 
                 <div className={style.wrap}>
-                    <img src={dealer.img} alt="" />
 
                     <div className={style.name}>
-
-                        {dealer.name}
-
+                            {dealer.name}
                     </div>
 
-                    <div>
-                        
-                        Адрес : {dealer.address}
+                    <img src={dealer.img} alt="" />
 
+                    <div className={style.address}>
+                        Адрес : {dealer.address}
                     </div>
 
                 </div>  

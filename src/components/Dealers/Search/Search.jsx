@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import style from './Search.module.css'
 
-const Search = (props) =>{
+const Search = () =>{
 
     const [value, setValue] = useState('')
     const navigate = useNavigate()
@@ -11,10 +11,7 @@ const Search = (props) =>{
 
         setValue(event.target.value)
 
-        if(event.target.value === ''){
-            navigate(`/dealers`)
-
-        }
+        if(event.target.value === '')  navigate(`/dealers`)
 
         else navigate(`/dealers?name=${event.target.value}`)        
 
@@ -26,7 +23,8 @@ const Search = (props) =>{
             value={value} 
             onChange={handleValue} 
             placeholder='Поиск...'
-            type="text"/>
+            type="text"
+        />
     )
 }
 

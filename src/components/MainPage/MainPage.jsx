@@ -15,7 +15,9 @@ const MainPage = () =>{
                 <h3>или нажав на иконку домика </h3>
             </div>
 
-            <button onClick={() => navigate('/dealers')}>Посмотреть список автомобильных дилеров</button>
+            <button onClick={() => navigate('/dealers')}>
+                Посмотреть список автомобильных дилеров
+            </button>
 
         </div>
     )

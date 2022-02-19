@@ -1,12 +1,15 @@
 .Search{
     border: 2px solid #d5daf7;
+    border-radius: 15px;
     color:#d5daf7 ;
     padding: 5px 20px;
     transition: 0.5s;
+    width: 50%;
+    height: 40px;
 }
 .Search:focus{
     border-color: #d5daf7;
-    border-radius: 5px;
+    border-radius: 0px;
     color: rgb(10, 10, 10);
     outline: none;
 }

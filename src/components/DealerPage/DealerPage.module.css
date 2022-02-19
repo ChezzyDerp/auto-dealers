@@ -5,8 +5,9 @@
     margin-top: 50px;
 }
 .name{
-    font-size: calc(15px + 1vw);
+    font-size: calc(25px + 1vw);
     font-weight: 500;
+    color: rgb(61, 61, 61);
 }
 
 .wrap{
@@ -18,7 +19,11 @@
     gap: 10px;
 
 }
+.address{
+    color: rgb(49, 49, 49);
+    font-size: calc(10px + 1vw);
+}
 .wrap > img{
-    width: 50%;
+    width: 60%;
     border-radius: 15px;
 }
