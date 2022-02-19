@@ -24,11 +24,13 @@ const DealerPage = () =>{
 
                 <div className={style.wrap}>
 
-                    <div className={style.name}>
-                            {dealer.name}
+                    <div className={style.wrapImg}>
+                        <img className={style.img} src={dealer.img} alt={dealer.name}/>
                     </div>
 
-                    <img src={dealer.img} alt="" />
+                    <div className={style.name}>
+                         Автосалон -  {dealer.name}
+                    </div>
 
                     <div className={style.address}>
                         Адрес : {dealer.address}
