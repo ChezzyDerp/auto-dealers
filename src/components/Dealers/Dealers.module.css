@@ -6,7 +6,9 @@
     gap: 25px;
 }
 .wrap{
-    width: 80%;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 400px);
     gap: 30px;
