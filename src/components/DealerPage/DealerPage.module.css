@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 120px;
 }
 .name{
     font-size: calc(25px + 1vw);

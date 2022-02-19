@@ -11,10 +11,16 @@ const Dealers = ({dealers = []}) =>{
         <div className={style.Dealers} >
             
             <Search />
+           
             
-            <div className={style.wrap}>
-                {dealers.length ? <DealersList dealers={dealers}/> : <img src={preloader} alt="preloader"/> }  
-            </div>
+                {dealers.length 
+                ?
+                    <div className={style.wrap}>
+                        <DealersList dealers={dealers}/>
+                    </div> 
+                :
+                 <img src={preloader} alt="preloader"/>  }  
+           
             
                    
         </div>
