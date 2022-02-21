@@ -16,7 +16,7 @@ const Search = () =>{
             }
         })
 
-    }, [0])
+    }, [search])
 
     const handleValue = event =>{
 

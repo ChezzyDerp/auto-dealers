@@ -1,5 +1,5 @@
 import { ADD_DEALERS } from "../actionTypes"
 
-export default (dealers) =>{
+export const addDealersAC = (dealers) =>{
     return {type: ADD_DEALERS, payload:dealers}
 }

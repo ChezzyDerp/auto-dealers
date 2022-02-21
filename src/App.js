@@ -1,6 +1,6 @@
 import {connect} from 'react-redux'
 import { getDealers } from './api/api';
-import addDealersAC from './state/actionCreators/addDealersAC'
+import {addDealersAC} from './state/actionCreators/addDealersAC'
 import React from 'react'
 import { Route, Routes } from 'react-router-dom';
 import Dealers from './components/Dealers/Dealers';
