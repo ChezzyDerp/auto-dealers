@@ -29,6 +29,10 @@ const DealerPage = () =>{
 
                 <div onClick={() => setModalImg(false)}
                      className={style.wrapModalImg}>
+                    
+                    <div onClick={() => setModalImg(false)} className={style.closeModal}>
+                            ❎
+                    </div>
 
                     <img onClick={(event) => event.stopPropagation()} 
                          className={style.modalImg} 
@@ -51,15 +55,16 @@ const DealerPage = () =>{
 
                         <div className={style.wrapData}>
                             <div className={style.name}>
-                                Автосалон - <span>{dealer.name}</span> 
+                                Автосалон: <span>{dealer.name}</span> 
                             </div>
 
                             <div className={style.address}>
-                                Адрес : {dealer.address}
+                                Адрес : <span>{dealer.address}</span>
                             </div>
 
                             <div className={style.description}>
-                                {dealer.description}
+                                Описание :<br />
+                                <span>{dealer.description}</span>
                             </div>
                         </div>
 

@@ -1,6 +1,7 @@
 import {useSearchParams } from 'react-router-dom'
 import DealerCard from './DealerCard/DealerCard'
 
+
 const DealersList = ({dealers}) =>{
 
     const [query] = useSearchParams()
@@ -14,16 +15,19 @@ const DealersList = ({dealers}) =>{
 
                           
     return(
-        dealers.filter(e => isEquals(e.name)).map((dealer) =>{
-            return (
-                <DealerCard 
-                    key={dealer.id} 
-                    name={dealer.name}
-                    img={dealer.img}
-                    id={dealer.id}
-                />
-            )
-        })
+        dealers.filter(e => isEquals(e.name)).length > 0 ?
+            dealers.filter(e => isEquals(e.name)).map((dealer) =>{
+                return (
+                    <DealerCard 
+                        key={dealer.id} 
+                        name={dealer.name}
+                        img={dealer.img}
+                        id={dealer.id}
+                    />
+                )
+            })
+        : <div>Ничего не найдено :(</div>
+        
         
     )
 }

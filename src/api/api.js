@@ -2,7 +2,7 @@ import dealers from "./dealers"
 
 
 //Delat for all Promises
-const DELAY = 2000
+const DELAY = 400
 
 //Return promise with delay, promise data is all autosalons
 

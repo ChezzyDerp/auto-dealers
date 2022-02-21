@@ -15,7 +15,8 @@ const dealers = [
     {name:'Lamborghini', address:'Саулмышская 54/1', img:lamborghiniImg, id:'lamborghini',
         description:"Lorem ipsum dolor sit amet,consectetur adipiscing elit deserunt mollit anim id est laborum."},
     {name:'Rolls-Royce', address:'Площадь 3 кв. 2', img:rolls_royceImg, id:'rolls-royce',
-        description:"Lorem ipsum dolor sit amet,consectetur adipiscing elit deserunt mollit anim id est laborum."}
+        description:"Lorem ipsum dolor sit amet,consectetur adipiscing elit deserunt mollit anim id est laborum."},
+        
     
 ]
 

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useRef, useState} from 'react'
 import { useNavigate } from 'react-router-dom'
 import style from './Search.module.css'
 
@@ -6,7 +6,18 @@ const Search = () =>{
 
     const [value, setValue] = useState('')
     const navigate = useNavigate()
+    const search = useRef()
     
+    useEffect(() =>{
+
+        window.addEventListener('keypress', (e) =>{
+            if(e.key === '/'){
+                search.current.focus('')
+            }
+        })
+
+    }, [0])
+
     const handleValue = event =>{
 
         setValue(event.target.value)
@@ -19,6 +30,7 @@ const Search = () =>{
 
     return (
         <input 
+            ref={search}
             className={style.Search}
             value={value} 
             onChange={handleValue} 

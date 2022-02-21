@@ -10,20 +10,43 @@
 
 .name{
     font-size: calc(25px + 1vw);
-    font-weight: 200;
+    font-weight: 500;
     color: rgb(49, 49, 49);
+    font-weight: 600;
 }
 .name > span{
-    font-weight: 500;
+    font-weight: 800;
+    text-transform: uppercase;
+    background-color: rgb(111, 126, 255);
+    color: white;
+    padding: 0 15px;
 }
 .address{
     color: rgb(49, 49, 49);
     font-size: calc(8px + 1vw);
     margin-left: 10px;
-    
+    margin-top: 10px;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.address > span{
+    font-weight: 500;
+    color: white;
+    background-color: rgb(111, 126, 255);
+    padding: 0 10px;
 }
 .description{
-    margin-top: 25px;
+    margin-top: 55px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: calc(5px + 1vw);
+}
+.description > span{
+    font-size: calc(3px + 1vw);
+    margin-left: 15px;
 }
 .wrap{
     
@@ -68,6 +91,7 @@
     flex-direction: column;
     align-items: flex-start;
     margin: 0 40px;
+    animation: 1s flash;
 }
 .wrapBtn{
     display: flex;
@@ -75,11 +99,11 @@
     align-items: center;
 }
 .wrapBtn button{
-    height: 60px;
+    height: 150px;
     padding: 0 25px;
     border: 0;
     border-radius: 10px;
-    background-color: rgb(53, 134, 255);
+    background-color: rgb(111, 126, 255);
     color: white;
     font-weight: 500;
     cursor: pointer;
@@ -87,6 +111,7 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    animation: 1s backButtonToLeft forwards;
 }
 .wrapBtn button:hover{
     background-color: rgb(7, 106, 255);
@@ -100,9 +125,10 @@
     position:fixed;
     top: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.568);
+    background-color: rgba(0, 0, 0, 0.699);
     
     z-index: 100;
 }
@@ -110,4 +136,31 @@
     width: 60%;
     
 }
-
+.closeModal{
+    position: relative;
+    left: 32%;
+    font-size: calc(10px + 1vw);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.closeModal:hover{
+    font-size: calc(11px + 1vw);
+}
+@keyframes backButtonToLeft {
+    from{
+        margin-right: 0px;
+    }
+    to{
+        margin-right: 50px;
+    }
+}
+@keyframes flash {
+    from{
+        margin-top: 180px;
+        opacity: 0;
+    }
+    to{
+       margin-top: 0px;
+       opacity: 1;
+    }
+}

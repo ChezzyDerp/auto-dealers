@@ -1,21 +1,3 @@
-.Dealers{
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-.wrap{
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 400px);
-    gap: 30px;
-    animation: 0.5s flash;
-    margin-bottom: 50px;
-}
-
 .upButton{
     position: fixed;
     display: flex;
@@ -30,11 +12,14 @@
     bottom: 150px;
     right: 50px;
     cursor: pointer;
+    outline: 5px solid rgba(29, 119, 255, 0.603);
     user-select: none;
-    border: 1px solid rgb(96, 52, 255);
     animation: 0.8s flash;
 }
-
+.upButton:active{
+    animation: 0.2s closeButton;
+    
+}
 @keyframes flash {
     from{
         margin-top: 180px;
@@ -43,5 +28,18 @@
     to{
        margin-top: 0px;
        opacity: 1;
+    }
+}
+
+@keyframes closeButton {
+    from{
+
+        transform: rotate(0deg);
+
+    }
+    to{
+
+        transform: rotate(180deg);
+        opacity: 0;
     }
 }
