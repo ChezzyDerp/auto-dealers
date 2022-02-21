@@ -42,7 +42,20 @@
     color: #273c75;
     cursor: pointer;
     transition: 0.2s;
+    
+}
+.houseIcon{
+    animation: 5s houseRotate infinite;
 }
 .houseIcon:hover, .questionIcon:hover{
     color: white;
+    animation-play-state: paused;
+}
+
+
+@keyframes houseRotate {
+    20%{transform: rotate(10deg);}
+    40%{transform: rotate(0deg);}
+    60%{transform: rotate(-10deg);}
+    80%{transform: rotate(0deg);}
 }
