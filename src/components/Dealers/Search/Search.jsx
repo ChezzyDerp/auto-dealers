@@ -26,6 +26,7 @@ const Search = () =>{
             type="text"
         />
     )
+    
 }
 
 export default Search

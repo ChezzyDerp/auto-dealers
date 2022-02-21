@@ -5,6 +5,9 @@ const DealersList = ({dealers}) =>{
 
     const [query] = useSearchParams()
 
+
+    // We translate the URL and the text in the search tag to lowercase, 
+    //and use the include method to check if there are any matches, otherwise show all
     let isEquals = (name) => name.toLowerCase()
                                  .includes((query.get('name') || '')
                                  .toLowerCase())
@@ -21,6 +24,7 @@ const DealersList = ({dealers}) =>{
                 />
             )
         })
+        
     )
 }
 

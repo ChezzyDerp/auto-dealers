@@ -13,16 +13,15 @@ const Dealers = ({dealers = []}) =>{
             <Search />
            
             
-                {dealers.length 
+            {dealers.length 
                 ?
                     <div className={style.wrap}>
                         <DealersList dealers={dealers}/>
                     </div> 
                 :
-                 <img src={preloader} alt="preloader"/>  }  
+                    <img src={preloader} alt="preloader"/>  }      
            
             
-                   
         </div>
     )
 }

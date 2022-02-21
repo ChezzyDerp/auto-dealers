@@ -11,16 +11,13 @@ import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 
 class App extends React.Component {
 
-  constructor(props){
-    super(props)
-  }
 
   componentDidMount(){
-    getDealers().then((data) =>{
-      this.props.addDealers(data)
-    })
+
+    getDealers().then(data => this.props.addDealers(data))
+
   }
-  
+  //
   render(){
     return(
 
@@ -33,6 +30,9 @@ class App extends React.Component {
             <Route path='/' element={<MainPage/>}/>
 
             <Route exact path="/dealers" element={<Dealers dealers={this.props.allDealers}/> }>
+                
+                
+                {/* Router in case of url type - ?name= */}
 
                 <Route path='?name=:name' element={<Dealers dealers={this.props.allDealers}/> }/>
 
@@ -41,17 +41,21 @@ class App extends React.Component {
             <Route path="/dealers/:id" element={<DealerPage/>}  />
 
             <Route path='*' element={<NotFoundPage/>}/>
+            
         </Routes>
 
       </div>
     )
   }
 }
+
+
 const mapDispatchToProps = (dispatch) =>{
   return{
     addDealers : (data) => dispatch(addDealersAC(data))
   }
 }
+
 const mapStateToProps = (state) =>{
   return {
     allDealers: state.dealers
