@@ -9,11 +9,9 @@ const Search = () =>{
     const search = useRef()
     
     useEffect(() =>{
-
+        
         window.addEventListener('keypress', (e) =>{
-            if(e.key === '/'){
-                search.current.focus('')
-            }
+            search.current.focus()
         })
 
     }, [search])

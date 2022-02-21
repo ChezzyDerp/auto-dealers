@@ -17,7 +17,7 @@
     animation: 0.8s flash;
 }
 .upButton:active{
-    animation: 0.2s closeButton;
+    animation: 0.2s closeButton infinite;
     
 }
 @keyframes flash {
@@ -33,13 +33,11 @@
 
 @keyframes closeButton {
     from{
-
         transform: rotate(0deg);
-
     }
     to{
 
         transform: rotate(180deg);
-        opacity: 0;
+
     }
 }
